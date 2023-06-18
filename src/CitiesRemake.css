@@ -1,0 +1,125 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.cities-container {
+    padding-top: 20px;
+    background-color: rgb(39, 55, 77);
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.cities-container h1,
+.cities-container h2,
+.cities-container p {
+    color: white;
+}
+
+.cities-title {
+    text-align: center;
+}
+
+.floorplan-image-container {
+    width: 75vw;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.floorplan-image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.city-details {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.city-details h2 {
+    color: #fff;
+    padding: 10px;
+}
+
+.city-details-list {
+    flex: 1 1 50%;
+    padding: 10px;
+}
+
+.city-details-image {
+    flex: 1 1 50%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.city-details-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.Exhibitors-and-Partners {
+    padding-top: 20px;
+}
+
+.Exhibitors-and-Partners h2 {
+    color: #fff;
+    text-align: center;
+}
+
+.Exhibitors-Images,
+.Partners-Images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.Image-Row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+    .cities-title {
+        font-size: 24px;
+    }
+
+    .cities-description {
+        text-align: center;
+    }
+
+    .floorplan-image-container {
+        width: 90vw;
+    }
+
+    .city-details-list,
+    .city-details-image {
+        flex: 1 1 100%;
+    }
+
+    .Exhibitors-Images,
+    .Partners-Images {
+        justify-content: flex-start;
+    }
+
+    .Exhibitors-Images,
+    .Partners-Images,
+    .Image-Row {
+        flex-wrap: wrap;
+    }
+
+    .Image-Row img {
+        width: 100%;
+        max-width: 150px;
+    }
+}
